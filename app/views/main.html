@@ -1,0 +1,24 @@
+<div ng-controller="DrinkersCtrl">
+
+	<section class="drinkers" ng-repeat="drinker in drinkers">
+
+		<article class="drinker">
+			<h3>{{ drinker.name }}</h3>
+
+				<ul ng-repeat="round in drinker.rounds">
+		
+			<li>
+				{{ round.test }} |
+				{{ round.date | date }}
+			</li>
+
+		</ul>
+
+			<button class="btn" ng-click="removeDrinker( drinker )">Delete</button>
+			<button class="btn" ng-click="addRound( drinker )">Add a Round</button>
+
+		</article>
+
+	</section>
+
+</div>
