@@ -9,7 +9,7 @@ An Angular powered front end for keeping track of our beer dickery.
 
 **How to Run**
 
-1. Install dependencies - ``` npm install ```
+1. Install dependencies - ``` npm install && bower install```
 2. Run Grunt Server - ``` grunt server ```
 
 **Shit to Do**
